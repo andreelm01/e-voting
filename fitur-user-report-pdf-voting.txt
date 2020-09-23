@@ -1,0 +1,15 @@
+penambahan report user pdf
+
+admin
+- method di Controllers/Admin/UserController ( user_report )
+- penambahan button report di view : Views/admin/user/index_user.blade.php ( btn report )
+- new file on Views/admin/user/report_user.blade.php
+- web.php : Route::get('user-report/{id}', 'Admin\UserController@user_report')->name('user-report');
+
+user
+- menambahkan button report di page profil user : views/user/profile.blade.php
+- new file on views/user/report_user.blade.php
+
+note : 
+- tambahkan route baru di atas yg ada di web,php di method revalidate juga
+- saya hanya menggunakan 1 method dan 1 view saja pak, yg ada di Controllers/Admin/UserController ( user_report ), bisa di akses oleh admin dan user
